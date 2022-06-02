@@ -15,4 +15,12 @@
             "Error!!\nUnrecognized Content Type"
         ]);
     }
+
+    function TestInput($input){
+        $data = trim($input);
+        $data = stripslashes($input);
+        $data = htmlspecialchars($input);
+
+        return $data;
+    }
 ?>
